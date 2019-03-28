@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fut_bc">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtanimation3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DICE OPTIONS"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="0"
+                    android:text="View : " />
+
+                <TextView
+                    android:id="@+id/txtListorAnim"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0"
+                    android:foreground="@android:drawable/arrow_down_float"
+                    android:foregroundGravity="right|center_vertical"
+                    android:text="Animation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtchoosenum"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Choose Dice Number :" />
+
+                <Button
+                    android:id="@+id/btnminus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/fut_button_circle_open"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/txtdicenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:text="2"
+                    android:textColor="@color/fut_text_color"
+                    android:textSize="36sp"
+                    />
+
+                <Button
+                    android:id="@+id/btnplus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/fut_button_circle_open"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtchooseside"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Choose Number of Sides :" />
+
+                <Button
+                    android:id="@+id/btnsideminus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/fut_button_circle_open"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/txtsidenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:text="6"
+                    android:textColor="@color/fut_text_color"
+                    android:textSize="36sp"
+                    />
+
+                <Button
+                    android:id="@+id/btnsideplus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/fut_button_circle_open"
+                    android:text="+" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtchooseshape"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="50"
+                    android:text="Choose Dice Shape :" />
+
+                <Button
+                    android:id="@+id/btnleftshape"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="25"
+                    android:background="@drawable/triangle_left" />
+
+
+                <Button
+                    android:id="@+id/imgDiceShape"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="25"
+                    android:background="@drawable/monster_green_dice"
+                    android:foreground="@mipmap/dice11"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/btnrightshape"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="25"
+                    android:background="@drawable/triangle_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtchooscolor"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:text="Choose Dice Color :" />
+
+                <Button
+                    android:id="@+id/btnleftcolor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/triangle_left" />
+
+
+                <Button
+                    android:id="@+id/imgdicecolor"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/monster_green_dice"
+                    android:foreground="@mipmap/dice11"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/btnrightcolor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/triangle_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtchoossymbol"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:text="Choose Dice Symbol :" />
+
+                <Button
+                    android:id="@+id/btnleftsymbol"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/triangle_left" />
+
+
+                <Button
+                    android:id="@+id/imgDiceSymbol"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/monster_green_dice"
+                    android:foreground="@mipmap/dice11"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/btnrightsymbol"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/triangle_right" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtchoossymbol"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:text="Choose Symbol Color :" />
+
+                <Button
+                    android:id="@+id/btnLeftSymbolColor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/triangle_left" />
+
+
+                <Button
+                    android:id="@+id/imgDiceSymbolColor"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/monster_green_dice"
+                    android:foreground="@mipmap/dice11"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/btnRightSymbolColor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/triangle_right" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/checkSum"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fut_button"
+                    android:text="sum" />
+
+                <Button
+                    android:id="@+id/checkBest"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fut_button"
+                    android:text="best" />
+
+                <Button
+                    android:id="@+id/checkWorst"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fut_button"
+                    android:text="Worst"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/checkMiddle"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fut_button"
+                    android:text="Middle"
+
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/checkCount"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fut_button"
+                    android:text="Count"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/addP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Add Previous Value"
+                    android:textColor="@color/fut_text_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  (It Can Only Use in List View )"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="?attr/homeAsUpIndicator" />
+    </LinearLayout>
+
+</RelativeLayout>
